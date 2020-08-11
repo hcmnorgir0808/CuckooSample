@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		376D0A85A68ADCE62A4F80B1 /* Pods_CuckooSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0AA7F93935CF22A439D08 /* Pods_CuckooSampleTests.framework */; };
 		9DB6DFC0FFBF938B4D93D9D5 /* Pods_CuckooSample_CuckooSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1B3E54D57D9B325B0BA6E7 /* Pods_CuckooSample_CuckooSampleUITests.framework */; };
 		C61996CE24E12ADD003A5574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61996CD24E12ADD003A5574 /* AppDelegate.swift */; };
 		C61996D024E12ADD003A5574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61996CF24E12ADD003A5574 /* SceneDelegate.swift */; };
@@ -17,7 +16,11 @@
 		C61996DA24E12AE7003A5574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61996D824E12AE7003A5574 /* LaunchScreen.storyboard */; };
 		C61996E524E12AE7003A5574 /* CuckooSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61996E424E12AE7003A5574 /* CuckooSampleTests.swift */; };
 		C61996F024E12AE8003A5574 /* CuckooSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61996EF24E12AE8003A5574 /* CuckooSampleUITests.swift */; };
-		ED8F75A39CE6A951F06C58DD /* Pods_CuckooSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22343F255974A1A30D232D7 /* Pods_CuckooSample.framework */; };
+		C619970524E13F9C003A5574 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C619970424E13F9C003A5574 /* UserRepository.swift */; };
+		C619970724E14392003A5574 /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C619970624E14392003A5574 /* Cuckoo.framework */; };
+		C619970824E144B7003A5574 /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C619970624E14392003A5574 /* Cuckoo.framework */; };
+		C6729D3124E2FAE000CA22B1 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6729D3024E2FAE000CA22B1 /* GeneratedMocks.swift */; };
+		C6729D3A24E3019100CA22B1 /* Cuckoo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6729D3924E3019000CA22B1 /* Cuckoo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,28 @@
 			remoteInfo = CuckooSample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C619970A24E14B4B003A5574 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6729D3624E3004800CA22B1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6729D3A24E3019100CA22B1 /* Cuckoo.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0531F1BEFD80F4F66D5A0ABE /* Pods-CuckooSample-CuckooSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuckooSample-CuckooSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-CuckooSample-CuckooSampleUITests/Pods-CuckooSample-CuckooSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +84,10 @@
 		C61996EB24E12AE8003A5574 /* CuckooSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuckooSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61996EF24E12AE8003A5574 /* CuckooSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuckooSampleUITests.swift; sourceTree = "<group>"; };
 		C61996F124E12AE8003A5574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C619970424E13F9C003A5574 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C619970624E14392003A5574 /* Cuckoo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cuckoo.framework; path = CuckooSampleTests/Carthage/Build/iOS/Cuckoo.framework; sourceTree = "<group>"; };
+		C6729D3024E2FAE000CA22B1 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		C6729D3924E3019000CA22B1 /* Cuckoo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cuckoo.framework; path = CuckooSampleTests/Carthage/Build/iOS/Cuckoo.framework; sourceTree = "<group>"; };
 		E7BC008F41B8813AA728FFA9 /* Pods-CuckooSample-CuckooSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuckooSample-CuckooSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-CuckooSample-CuckooSampleUITests/Pods-CuckooSample-CuckooSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED1B3E54D57D9B325B0BA6E7 /* Pods_CuckooSample_CuckooSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuckooSample_CuckooSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -68,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8F75A39CE6A951F06C58DD /* Pods_CuckooSample.framework in Frameworks */,
+				C619970824E144B7003A5574 /* Cuckoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376D0A85A68ADCE62A4F80B1 /* Pods_CuckooSampleTests.framework in Frameworks */,
+				C619970724E14392003A5574 /* Cuckoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +136,7 @@
 		A1BCEB59F23684AC22A1F7AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C619970624E14392003A5574 /* Cuckoo.framework */,
 				C22343F255974A1A30D232D7 /* Pods_CuckooSample.framework */,
 				ED1B3E54D57D9B325B0BA6E7 /* Pods_CuckooSample_CuckooSampleUITests.framework */,
 				24E0AA7F93935CF22A439D08 /* Pods_CuckooSampleTests.framework */,
@@ -117,6 +147,7 @@
 		C61996C124E12ADD003A5574 = {
 			isa = PBXGroup;
 			children = (
+				C6729D3924E3019000CA22B1 /* Cuckoo.framework */,
 				C61996CC24E12ADD003A5574 /* CuckooSample */,
 				C61996E324E12AE7003A5574 /* CuckooSampleTests */,
 				C61996EE24E12AE8003A5574 /* CuckooSampleUITests */,
@@ -142,6 +173,7 @@
 				C61996CD24E12ADD003A5574 /* AppDelegate.swift */,
 				C61996CF24E12ADD003A5574 /* SceneDelegate.swift */,
 				C61996D124E12ADD003A5574 /* ViewController.swift */,
+				C619970424E13F9C003A5574 /* UserRepository.swift */,
 				C61996D324E12ADD003A5574 /* Main.storyboard */,
 				C61996D624E12AE7003A5574 /* Assets.xcassets */,
 				C61996D824E12AE7003A5574 /* LaunchScreen.storyboard */,
@@ -153,6 +185,7 @@
 		C61996E324E12AE7003A5574 /* CuckooSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6729D3024E2FAE000CA22B1 /* GeneratedMocks.swift */,
 				C61996E424E12AE7003A5574 /* CuckooSampleTests.swift */,
 				C61996E624E12AE7003A5574 /* Info.plist */,
 			);
@@ -179,6 +212,7 @@
 				C61996C624E12ADD003A5574 /* Sources */,
 				C61996C724E12ADD003A5574 /* Frameworks */,
 				C61996C824E12ADD003A5574 /* Resources */,
+				C6729D3624E3004800CA22B1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -197,8 +231,8 @@
 				C61996DC24E12AE7003A5574 /* Sources */,
 				C61996DD24E12AE7003A5574 /* Frameworks */,
 				C61996DE24E12AE7003A5574 /* Resources */,
-				D36754328DA84B1BA7E964F2 /* [CP] Embed Pods Frameworks */,
 				C61996FD24E12C0A003A5574 /* ShellScript */,
+				C619970A24E14B4B003A5574 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -330,6 +364,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/CuckooSample/UserRepository.swift",
 			);
 			outputFileListPaths = (
 			);
@@ -337,7 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/FileName1.swift\" \\\n\"$INPUT_DIR/FileName2.swift\" \\\n\"$INPUT_DIR/FileName3.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\nOUTPUT_FILE=\"$PROJECT_DIR/CuckooSampleTests/GeneratedMocks.swift\"\nCarthage/Checkouts/Cuckoo/run generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \n";
 		};
 		C68A21E4BDCAB4164938039E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -359,23 +394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D36754328DA84B1BA7E964F2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CuckooSampleTests/Pods-CuckooSampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CuckooSampleTests/Pods-CuckooSampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CuckooSampleTests/Pods-CuckooSampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF1C40788DE82610FBEA466D /* [CP] Check Pods Manifest.lock */ = {
@@ -409,6 +427,7 @@
 			files = (
 				C61996D224E12ADD003A5574 /* ViewController.swift in Sources */,
 				C61996CE24E12ADD003A5574 /* AppDelegate.swift in Sources */,
+				C619970524E13F9C003A5574 /* UserRepository.swift in Sources */,
 				C61996D024E12ADD003A5574 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C61996E524E12AE7003A5574 /* CuckooSampleTests.swift in Sources */,
+				C6729D3124E2FAE000CA22B1 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +605,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WZ3V6P365;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CuckooSampleTests/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CuckooSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -604,6 +628,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WZ3V6P365;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CuckooSampleTests/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CuckooSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -624,12 +652,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WZ3V6P365;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/CuckooSampleTests/Carthage/Build/iOS";
 				INFOPLIST_FILE = CuckooSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwamoto.CuckooSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,12 +676,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WZ3V6P365;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/CuckooSampleTests/Carthage/Build/iOS";
 				INFOPLIST_FILE = CuckooSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwamoto.CuckooSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

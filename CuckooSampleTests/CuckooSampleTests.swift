@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Cuckoo
 @testable import CuckooSample
 
 class CuckooSampleTests: XCTestCase {
@@ -20,15 +21,20 @@ class CuckooSampleTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        let mock = MockUserRepository()
+        
+        // スタブ作成
+        stub(mock) { stub in
+            // メソッドの振る舞いを変更
+            when(stub.getName(id: anyInt())).thenReturn("stub name")
+            when(stub.getAge(id: anyInt())).thenReturn(18)
         }
+        
+        XCTAssertEqual(mock.getName(id: 1), "stub name")
+        XCTAssertEqual(mock.getAge(id: 1), 18)
+        
+        // verifyは何回メソッドが呼ばれたとか、引数が正しいとかの検証を行う
+        // 引数が１で１回呼ばれたことを検証
+        verify(mock).getName(id: 1)
     }
-
 }
